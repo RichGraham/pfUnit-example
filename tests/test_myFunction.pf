@@ -1,0 +1,22 @@
+module test_myFunction
+  use myFunction
+
+  use funit
+  implicit none
+
+  double precision:: tolerance=1e-15
+
+contains
+  @test
+  subroutine test_square()
+    implicit none
+    double precision:: x_in=3.d0, yExpected=9.d0, yActual
+
+    yActual = mySquare( x_in)
+   
+
+    @assertEqual(yExpected, yActual , tolerance,'test for square function')
+
+  end subroutine test_square
+
+end module test_myFunction

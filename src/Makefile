@@ -1,4 +1,4 @@
-FC := gfortran-fsf-9
+FC := gfortran
 SRCS := myFunction.F90
 OBJS := $(SRCS:%.F90=%.o)
 

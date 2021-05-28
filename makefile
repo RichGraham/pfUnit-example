@@ -1,3 +1,4 @@
+
 VPATH = ./ : src
 # Find all source files, create a list of corresponding object files
 SRCS= myFunction.F90 main.F90 
@@ -8,7 +9,7 @@ MODS=$(wildcard mod*.F90)
 MOD_OBJS=$(patsubst %.F90,%.o,$(MODS))
 
 # Compiler/Linker settings
-FC = gfortran-fsf-9
+FC = gfortran
 FCFLAGS =  -g -c -cpp -DDEBUG -Wall -DDEBUG -Wextra -Wconversion  -ffpe-trap=invalid -ffpe-trap=zero,overflow,underflow -fbacktrace -fdump-core -fcheck=bounds  
 FLFLAGS =  -g -Wall -DDEBUG -Wextra -Wconversion  -ffpe-trap=invalid -ffpe-trap=zero,overflow,underflow -fbacktrace -fdump-core -fcheck=bounds
 PROGRAM = Main.out

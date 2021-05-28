@@ -1,7 +1,6 @@
-FC := gfortran-fsf-9
+FC := gfortran
 
-
-LATEST_PFUNIT_DIR := /Users/pmzrsg/pFUnit/build/installed/PFUNIT-4.1
+LATEST_PFUNIT_DIR := /gpfs01/software/easybuild-uon/software/pFUnit/4.2.0-gompi-2020b/PFUNIT-4.2/
 include $(LATEST_PFUNIT_DIR)/include/PFUNIT.mk
 
 all: test_myFunction

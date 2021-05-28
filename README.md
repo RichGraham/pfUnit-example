@@ -2,6 +2,7 @@
 A minimal example of pfUnit on the University of Nottingham HPC
 
 ====Modules====
+First unload any compiler modules you have loaded
 To load the required module, run (note this wil not work with version 3 of pfUnit) 
 module load pfunit-uoneasy/4.2.0-gompi-2020b
 
